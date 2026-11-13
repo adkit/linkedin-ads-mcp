@@ -3,7 +3,7 @@
   "mcpServers": {
     "adkit-linkedin-ads": {
       "type": "streamable-http",
-      "url": "https://mcp.adkit.so/api/mcp/linkedin-ads"
+      "url": "https://mcp.adkit.so/linkedin-ads"
     }
   }
 }

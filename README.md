@@ -1,10 +1,10 @@
 # LinkedIn Ads MCP Server
 
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.adkit%2Flinkedin-ads-7c3aed)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.adkit/linkedin-ads) [![Setup guide](https://img.shields.io/badge/setup_guide-adkit.so-7c3aed)](https://adkit.so/features/ads-mcp/linkedin) [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](./LICENSE)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.adkit%2Flinkedin--ads-7c3aed)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.adkit/linkedin-ads) [![Setup guide](https://img.shields.io/badge/setup_guide-adkit.so-7c3aed)](https://adkit.so/features/ads-mcp/linkedin) [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](./LICENSE)
 
 Connect LinkedIn Ads to Claude, ChatGPT, Cursor, Codex or any AI app that supports MCP. AdKit hosts the server, so you only add an address to your AI app.
 
-- **MCP address:** `https://mcp.adkit.so/api/mcp/linkedin-ads`
+- **MCP address:** `https://mcp.adkit.so/linkedin-ads`
 - **Website:** [LinkedIn Ads MCP by AdKit](https://adkit.so/features/ads-mcp/linkedin)
 
 Every change is saved as a draft first, so your AI can't spend money on its own. Nothing goes live on LinkedIn Ads until you approve it.
@@ -36,12 +36,12 @@ There are two ways to connect:
 ### Claude (web and desktop)
 
 - **All platforms:** [install AdKit from the Claude directory](https://claude.ai/directory/adkit), in one click.
-- **LinkedIn Ads only:** Settings → **Connectors** → **Add custom connector** → paste `https://mcp.adkit.so/api/mcp/linkedin-ads`.
+- **LinkedIn Ads only:** Settings → **Connectors** → **Add custom connector** → paste `https://mcp.adkit.so/linkedin-ads`.
 
 ### ChatGPT
 
 - **All platforms:** [add the AdKit app](https://chatgpt.com/apps/adkit/asdk_app_6a1e848decdc8191a4974b315c51661f), in one click.
-- **LinkedIn Ads only:** Settings → **Connectors** → **Add custom connector** → paste `https://mcp.adkit.so/api/mcp/linkedin-ads`.
+- **LinkedIn Ads only:** Settings → **Connectors** → **Add custom connector** → paste `https://mcp.adkit.so/linkedin-ads`.
 
 ### Claude Code
 
@@ -55,7 +55,7 @@ As a plugin:
 Or as an MCP server only:
 
 ```
-claude mcp add --transport http adkit-linkedin-ads https://mcp.adkit.so/api/mcp/linkedin-ads
+claude mcp add --transport http adkit-linkedin-ads https://mcp.adkit.so/linkedin-ads
 ```
 
 ### Gemini CLI
@@ -72,7 +72,7 @@ Add to `~/.cursor/mcp.json`:
 {
   "mcpServers": {
     "adkit-linkedin-ads": {
-      "url": "https://mcp.adkit.so/api/mcp/linkedin-ads"
+      "url": "https://mcp.adkit.so/linkedin-ads"
     }
   }
 }
@@ -84,7 +84,7 @@ Add to `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.adkit-linkedin-ads]
-url = "https://mcp.adkit.so/api/mcp/linkedin-ads"
+url = "https://mcp.adkit.so/linkedin-ads"
 ```
 
 In Claude Code, Gemini CLI, Cursor and Codex, use `https://mcp.adkit.so` instead to connect all platforms.
